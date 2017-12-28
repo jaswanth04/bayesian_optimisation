@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../bayesian_optimisation/.idea/modules/bayesian_optimisation.iml" filepath="$PROJECT_DIR$/../bayesian_optimisation/.idea/modules/bayesian_optimisation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bayesian_optimisation/.idea/modules/bayesian_optimisation-build.iml" filepath="$PROJECT_DIR$/../bayesian_optimisation/.idea/modules/bayesian_optimisation-build.iml" />
+    </modules>
+  </component>
+</project>
