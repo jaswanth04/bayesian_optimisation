@@ -1,4 +1,5 @@
-import breeze.linalg.DenseMatrix
+import breeze.linalg.{Axis, DenseMatrix, diag, mpow, sum}
+import breeze.numerics.exp
 
 object trial {
 
@@ -11,9 +12,13 @@ object trial {
     println("---------")
     println(b.t)
     println("----------")
-    println(a*b)
+    println((a*b).t)
     println("-------------")
-    println(a.t * b.t)
+    println(b.t * a.t)
+
+    val c: DenseMatrix[Double] = a.mapValues(math.pow(_,2))
+
+//    println(exp(a))
 
   }
 

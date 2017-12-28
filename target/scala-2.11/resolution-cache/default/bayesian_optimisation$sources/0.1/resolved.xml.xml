@@ -4,7 +4,7 @@
 		module="bayesian_optimisation$sources"
 		revision="0.1"
 		status="integration"
-		publication="20171228075349"
+		publication="20171228110556"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

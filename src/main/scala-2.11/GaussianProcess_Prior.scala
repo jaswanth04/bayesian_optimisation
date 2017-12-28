@@ -4,7 +4,7 @@ import breeze.stats.distributions.Gaussian
 
 import scala.math.{exp, pow}
 
-object GaussianProcess_trial01 {
+object GaussianProcess_Prior {
 
   def main(args: Array[String]): Unit = {
 
