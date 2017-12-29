@@ -1,102 +1,109 @@
-import breeze.linalg.{*, Axis, DenseMatrix, DenseVector, cholesky, diag, linspace, sum}
-import breeze.numerics.{sin, sqrt}
+import breeze.linalg.{DenseVector,linspace}
+import breeze.numerics.sin
 import breeze.plot.{Figure, plot}
-import breeze.stats.distributions.{Gaussian, Rand}
+import breeze.stats.distributions.Rand
 
-import scala.math.{exp, pow}
 
 object GaussianProcess_Regression {
 
   def main(args: Array[String]): Unit = {
+
+    // Generating points between -5,5
     val n = 50
     val x_test = linspace(-5,5,n)
 
-    def kernel(x: Double, y: Double, param: Double =0.1) = exp(-0.5*(1/param)*pow(x-y,2))
-
-    def covMat(x: DenseVector[Double], y: DenseVector[Double]) = {
-
-      DenseMatrix.tabulate(x.length,y.length){
-        case(i,j) => kernel(x(i),y(j))
-      }
-    }
-
+    // Defining a sin function with some noise
     def f(x: Double) = sin(x) * 0.9 * (x-5)
     val noiseVariance = 0.0005
     def randGen = Rand.uniform
     def y(x: Double) = f(x) + randGen.draw()*8000*noiseVariance
 
-    val x_train_indices = Array(4,18,29,35,47,25,22,17,19,10)
+    // Generating training data as a subset of test data
+    val x_train_indices = Array(4,18,29,35,47)
     val x_train = new DenseVector(x_train_indices.map(x_test(_)))
-
     val y_train: DenseVector[Double] = x_train.map(y)
 
-    val K_train = covMat(x_train,x_train) + DenseMatrix.eye[Double](10) * noiseVariance
-    val L_train = cholesky(K_train)
+    // Instantiating new Gaussian Process function with Exponential Squared Kernel
+    val GP = new GaussianProcess(ExpSquaredKernel(0.1),noiseVariance)
 
-    val m_train = L_train \ y_train
+    // Generating Prior Samples
+    val f_prior = GP.getPriorSample(x_test,4)
 
-    val K_s = covMat(x_train,x_test)
-    val K_ss = covMat(x_test,x_test)
+    // Updating the parameters with the training Data
+    GP.update(x_train,y_train)
 
-    val LK_train = L_train \ K_s
+    //Get mean, standard deviation and CoVariance for the test points
+    val (mu,s,sigma) = GP.getMeanAndStandardDeviation(x_test)
 
-    val s2 = diag(K_ss) - sum(LK_train.mapValues(pow(_,2)),Axis._0).t
-    val s = sqrt(s2)
+    // Get posterior samples post training
+    val f_posterior = GP.getPosteriorSample(x_test,4)
 
-    val mu = LK_train.t * m_train
-    val sigma = K_ss - (LK_train.t * LK_train)
-
-    val randNormal = Gaussian(0,1)
-    val n_gp_samples = 3
-    val randMatrix = DenseMatrix.rand(n,n_gp_samples,randNormal)
-
-    def f_prior = cholesky(K_ss) * DenseVector.rand(n,randNormal)
-
-    def f_posterior = mu + cholesky(sigma) * DenseVector.rand(n,randNormal)
-
-//    println(K_train.rows,K_train.cols)
-    println(mu)
-    println(sigma)
-    println(s2)
-    println(s)
-
+    //Plotting the data
     val fig = Figure()
 
+    //Plotting the true function
     val plt3 = fig.subplot(2,2,0)
     plt3 += plot(x_test,x_test.map(y), name = "true Function", style = '-')
     plt3.title = "True Function"
 
+    // Plotting the Priors
     val plt2 = fig.subplot(2,2,1)
-    plt2 += plot(x_test,f_prior)
-    plt2 += plot(x_test,f_prior)
-    plt2 += plot(x_test,f_prior)
+
+    for (prior <- f_prior)
+      plt2 += plot(x_test,prior)
 
     plt2.title = "Prior"
 
+    // Plotting the mean and boundaries
     val plt = fig.subplot(2,2,2)
 
     plt += plot(x_test,mu,name = "mean")
     plt += plot(x_test,mu + s * 2.0, name = "upper boundary",style = '-')
     plt += plot(x_test,mu - s * 2.0, name = "upper boundary",style = '-')
-//    plt += plot(x_test,x_test.map(y), name = "true Function", style = '-')
 
-    plt.title = "Mean and boundaries"
+    plt.title = "Mean and boundaries - After first training"
     plt.legend = true
 
-//    fig.refresh()
-
+    //Plotting the Posterior
     val plt1 = fig.subplot(2,2,3)
 
-    plt1 += plot(x_test,f_posterior)
-    plt1 += plot(x_test,f_posterior)
-    plt1 += plot(x_test,f_posterior)
+    for (posterior <- f_posterior)
+      plt1 += plot(x_test,posterior)
 
-    plt1.title = "Posterior"
-
-
-
-
+    plt1.title = "Posterior - After first training"
 
     fig.refresh()
+
+    // Training the Function on new Data Points
+    val x_train_indices_2 = Array(25,22,17,19,10)
+    val x_train_2 = new DenseVector(x_train_indices_2.map(x_test(_)))
+    val y_train_2: DenseVector[Double] = x_train_2.map(y)
+
+    GP.update(x_train_2,y_train_2)
+
+    val (mu_2,s_2,sigma_2) = GP.getMeanAndStandardDeviation(x_test)
+
+    // Plotting the Mean and Boundaries after the second training
+    val plt4 = fig.subplot(3,2,4)
+
+    plt4 += plot(x_test,mu_2,name = "mean")
+    plt4 += plot(x_test,mu_2 + s_2 * 2.0, name = "upper boundary",style = '-')
+    plt4 += plot(x_test,mu_2 - s_2 * 2.0, name = "upper boundary",style = '-')
+
+    plt4.title = "Mean and boundaries - After Second training"
+    plt4.legend = true
+
+    // Generating and plotting the posterior samples
+    val f_posterior_2 = GP.getPosteriorSample(x_test,4)
+
+    val plt5 = fig.subplot(3,2,5)
+
+    for (posterior <- f_posterior_2)
+      plt5 += plot(x_test,posterior)
+
+    plt5.title = "Posterior - After Second training"
+
+    fig.refresh()
+
   }
 }
