@@ -1,7 +1,6 @@
 import breeze.linalg.{Axis, DenseMatrix, DenseVector, cholesky, diag, sum}
 import breeze.stats.distributions.Gaussian
 import breeze.numerics.{pow, sqrt}
-import com.sun.media.sound.SoftResamplerStreamer
 
 
 /*

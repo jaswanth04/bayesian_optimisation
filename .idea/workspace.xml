@@ -2,35 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d425eec-050b-419e-b183-a2b430a60c32" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../bayesian_optimisation/.idea/uiDesigner.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/.idea/sbt.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/.idea/sbt.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/AcquisitionFunction.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/BayesianOptimisation.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/bayesOpt_trial.scala" />
       <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/project/target/config-classes/$21a1ab3fa8b2471dedc9$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/project/target/config-classes/$21a1ab3fa8b2471dedc9.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/project/target/config-classes/$21a1ab3fa8b2471dedc9.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess_Prior.scala" afterPath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess_Prior.scala" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess_Regression.scala" afterPath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess_Regression.scala" />
+      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess.scala" afterPath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess.scala" />
       <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/trial.scala" afterPath="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/trial.scala" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/classes/GaussianProcess_trial01$$anonfun$covMat$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/classes/GaussianProcess_trial01$$anonfun$main$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/classes/GaussianProcess_trial01$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/classes/GaussianProcess_trial01.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/classes/trial$.class" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/classes/trial$.class" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/default/bayesian_optimisation$sources/0.1/resolved.xml.properties" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/default/bayesian_optimisation$sources/0.1/resolved.xml.properties" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/default/bayesian_optimisation$sources/0.1/resolved.xml.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/default/bayesian_optimisation$sources/0.1/resolved.xml.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-compile-internal.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-compile-internal.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-compile.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-compile.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-optional.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-optional.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-plugin.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-plugin.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-pom.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-pom.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-provided.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-provided.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-runtime-internal.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-runtime-internal.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-runtime.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-runtime.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-scala-tool.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-scala-tool.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-test-internal.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-test-internal.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-test.xml" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/scala-2.11/resolution-cache/reports/default-bayesian_optimisation$sources-test.xml" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/streams/$global/$global/dumpStructure/$global/streams/out" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/streams/$global/$global/dumpStructure/$global/streams/out" />
-      <change beforePath="$PROJECT_DIR$/../bayesian_optimisation/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/../bayesian_optimisation/target/streams/$global/updateClassifiers/$global/streams/out" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,10 +41,10 @@
       <file leaf-file-name="trial.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/trial.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="444">
+              <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
               <folding>
-                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#0#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,12 +62,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GaussianProcess_Regression.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GaussianProcess_Regression.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess_Regression.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="63">
+              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bayesOpt_trial.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/bayesOpt_trial.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BayesianOptimisation.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/BayesianOptimisation.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-711">
+              <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AcquisitionFunction.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/AcquisitionFunction.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +113,8 @@
       <file leaf-file-name="GaussianProcess.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-879">
-              <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+            <state relative-caret-position="-753">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
               </folding>
@@ -121,6 +137,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Jaswant Jonnada &lt;jaswanth04@gmail.com&gt;" />
         <option value="Jaswant Jonnada" />
       </list>
     </option>
@@ -144,10 +161,13 @@
         <option value="$PROJECT_DIR$/src/main/scala-2.11/GaussianProcess_Prior.scala" />
         <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/Kernel.scala" />
         <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/ExpSquaredKernel.scala" />
-        <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/trial.scala" />
-        <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess.scala" />
         <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess_Prior.scala" />
         <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess_Regression.scala" />
+        <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess.scala" />
+        <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/bayesOpt_trial.scala" />
+        <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/trial.scala" />
+        <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/AcquisitionFunction.scala" />
+        <option value="$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/BayesianOptimisation.scala" />
       </list>
     </option>
   </component>
@@ -226,7 +246,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GaussianProcess_trial02">
+  <component name="RunManager" selected="Application.trial">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -274,6 +294,20 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="bayesOpt_trial" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="bayesOpt_trial" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="bayesian_optimisation" />
       <envs />
     </configuration>
     <configuration name="trial" type="Application" factoryName="Application" temporary="true">
@@ -350,16 +384,18 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.GaussianProcess_trial01" />
       <item index="1" class="java.lang.String" itemvalue="Application.trial" />
       <item index="2" class="java.lang.String" itemvalue="Application.GaussianProcess_trial02" />
+      <item index="3" class="java.lang.String" itemvalue="Application.bayesOpt_trial" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.GaussianProcess_trial02" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GaussianProcess_trial01" />
-        <item index="2" class="java.lang.String" itemvalue="Application.trial" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.trial" />
+        <item index="1" class="java.lang.String" itemvalue="Application.bayesOpt_trial" />
+        <item index="2" class="java.lang.String" itemvalue="Application.GaussianProcess_trial02" />
+        <item index="3" class="java.lang.String" itemvalue="Application.GaussianProcess_trial01" />
       </list>
     </recent_temporary>
   </component>
@@ -447,7 +483,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514466072022</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented Gaussian Process as a class">
+      <created>1514535972096</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1514535972096</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented Gaussian Process classes">
+      <created>1514536085981</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1514536085981</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -465,9 +515,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -478,7 +529,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -488,7 +538,9 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Changed Trial" />
     <MESSAGE value="Gaussian Process updated for regression" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gaussian Process updated for regression" />
+    <MESSAGE value="Implemented Gaussian Process as a class" />
+    <MESSAGE value="Implemented Gaussian Process classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Gaussian Process classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -500,7 +552,7 @@
         <state relative-caret-position="420">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -509,7 +561,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -536,7 +590,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -563,7 +617,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -572,7 +628,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -609,26 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/trial.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-879">
-          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess_Prior.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -641,9 +677,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess_Regression.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="63">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/GaussianProcess.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-753">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/trial.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/BayesianOptimisation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-711">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/bayesOpt_trial.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bayesian_optimisation/src/main/scala-2.11/AcquisitionFunction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
